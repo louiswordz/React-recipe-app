@@ -2,7 +2,7 @@ import React from "react";
 import img from "../asset/img.png";
 import Recipe from "../components/recipe";
 
-Home = () => {
+const Home = () => {
   return (
     <main className="container">
       <div className="hero">
