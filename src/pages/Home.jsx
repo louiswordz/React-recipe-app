@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../asset/img.png";
-import Recipe from "../components/recipe";
+import recipes from "../components/recipe"; // Assuming you have a data file with recipes
 
 const Home = () => {
   return (
@@ -11,11 +11,11 @@ const Home = () => {
         </h1>
         <p id="para">
           Every meal tells a story of culinary mastery
-          <br /> dedicated and passionate craftmanship
+          <br /> dedicated and passionate craftsmanship
         </p>
         <div className="intro-nav">
           <button className="btn">
-            <a href="">Order</a>
+            <a href="#">Order</a>
           </button>
           <span id="text">Watch</span>
           <div id="play">&#9654;</div>
@@ -32,7 +32,7 @@ const Home = () => {
           </figure>
         </div>
         <div className="food-menu">
-          {Recipe.map((rec) => (
+          {recipes.map((rec) => (
             <div className="recipe-sample" key={rec.id}>
               <h2>{rec.name}</h2>
               <img src={rec.img} alt={rec.desc} />
