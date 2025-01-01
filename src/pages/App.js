@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./Home";
-import Recipe from "./Recipe";
-import More from "./More";
+import Home from "./Home.jsx";
+import Recipe from "./Recipe.jsx";
+import More from "./More.jsx";
 import Detail from "./Detail";
 import "../styles.css";
 import "../styles2.css";
@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div onClick={HandleShowElement(false)}>
       <header>
         {/* Logo */}
         <div className="logo">
