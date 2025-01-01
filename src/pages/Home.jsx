@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../asset/img.png";
-import recipes from "../components/recipe"; // Assuming you have a data file with recipes
+import recipes from "../components/recipes"; // Assuming you have a data file with recipes
 
 const Home = () => {
   return (
