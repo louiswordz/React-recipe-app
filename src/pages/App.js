@@ -1,22 +1,26 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./Home.jsx";
 import Recipe from "./Recipe.jsx";
 import More from "./More.jsx";
-import Detail from "./Detail";
 import "../styles.css";
 import "../styles2.css";
 
 function App() {
-  const [showElement, SetShowElement] = useState(false); // Initially visible
+  const [showElement, setShowElement] = useState(false); // Initially hidden
 
-  const HandleShowElement = (show) => {
-    SetShowElement(show);
+  const toggleMenu = (show) => {
+    setShowElement(show);
+  };
+
+  const handleDivClick = (e) => {
+    if (!e.target.closest(".togg")) {
+      setShowElement(false); // Close the menu only if clicking outside
+    }
   };
 
   return (
-    <div>
+    <div onClick={handleDivClick}>
       <header>
         {/* Logo */}
         <div className="logo">
@@ -37,7 +41,7 @@ function App() {
             <Link className="nav-link" to="/add-recipe">
               Add Recipe
             </Link>
-            <i className="close" onClick={() => HandleShowElement(false)}>
+            <i className="close" onClick={() => toggleMenu(false)}>
               &times;
             </i>
           </nav>
@@ -51,7 +55,13 @@ function App() {
             />
           </div>
         </div>
-        <i className="open" onClick={() => HandleShowElement(true)}>
+        <i
+          className="open"
+          onClick={(e) => {
+            e.stopPropagation(); // Prevent parent div from firing
+            toggleMenu(true);
+          }}
+        >
           &equiv;
         </i>
       </header>

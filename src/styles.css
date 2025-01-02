@@ -148,6 +148,12 @@ header .nav .nav-link {
   background: #ff8c42;
 }
 
+.intro-nav button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 .intro-nav #play {
   border: none;
   background: #fff;
