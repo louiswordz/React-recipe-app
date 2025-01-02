@@ -89,6 +89,7 @@ function App() {
             Add Recipe
           </Link>
         </div>
+        <div className="nav-link"></div>
       </footer>
     </div>
   );

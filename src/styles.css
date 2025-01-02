@@ -360,7 +360,7 @@ div.recipe-form {
 div.recipe-form .form-element {
   border: 1px solid black;
   border-radius: 12px;
-  width: 100%;
+  width: 200%;
   max-width: 500px; /* Optional: Set a max width for better form scaling */
   padding: 20px;
 }
@@ -382,7 +382,7 @@ footer.footer {
   position: relative;
   bottom: 0;
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: row; /* Stack elements vertically */
   align-items: center; /* Center-align content */
   justify-content: center; /* Center content within the footer */
   width: 100%;
@@ -399,6 +399,7 @@ footer.footer .f-nav {
   align-items: center; /* Center-align links */
   gap: 10px; /* Add spacing between links */
   margin-bottom: 15px;
+  margin-left: 20px;
 }
 
 footer.footer .f-nav .nav-link {
@@ -406,6 +407,7 @@ footer.footer .f-nav .nav-link {
   font-size: 0.9rem; /* Slightly larger font size for better readability */
   text-decoration: none;
   font-weight: bold;
+  margin-bottom: 10px;
   transition: color 0.3s ease; /* Smooth hover transition */
 }
 
