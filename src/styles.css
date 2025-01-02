@@ -334,3 +334,27 @@ header .nav .nav-link {
 .main-recipe .flip button:hover {
   background: #ff6347; /* Change to tomato color on hover */
 }
+
+/***********************More***************************/
+.addmore {
+  margin-top: 20px;
+}
+
+div.recipe-form {
+  margin: 10vh auto 0;
+}
+
+div.recipe-form .form-element {
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 90%;
+  text-align: center;
+}
+
+div.recipe-from .form-element .meal {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin: 40px auto 0;
+  height: auto;
+}
