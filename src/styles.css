@@ -90,7 +90,7 @@ header .nav .nav-link {
 
 .container {
   position: relative;
-  top: 20vh;
+  top: 15vh;
   background: none;
   margin: 0 auto;
   max-width: 1200px;
@@ -107,6 +107,7 @@ header .nav .nav-link {
 .container .hero {
   text-align: center;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .container .hero #intro {
@@ -244,12 +245,12 @@ header .nav .nav-link {
 
 /* Recipe Heading */
 .recipe-heading {
-  margin-bottom: 40px; /* Adding space below the heading */
+  margin-top: 20px; /* Adding space below the heading */
 }
 
 .recipe-heading p {
-  font-size: 1.2rem; /*  font size for visibility */
-  color: #ff6347; /* Vibrant tomato color for emphasis */
+  font-size: 1.2rem;
+  color: #ff6347;
   font-family: "Times New Roman", Times, serif; /* Elegant font */
   margin-bottom: 10px; /* Adding space below the paragraph */
   text-align: center;
@@ -341,14 +342,13 @@ header .nav .nav-link {
 }
 
 div.recipe-form {
-  margin: 10vh auto 0;
+  margin: 10vh auto;
 }
 
 div.recipe-form .form-element {
   border: 1px solid black;
   border-radius: 12px;
   width: 110%;
-  text-align: center;
   padding: 20px;
 }
 
