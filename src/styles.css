@@ -90,7 +90,7 @@ header .nav .nav-link {
 
 .container {
   position: relative;
-  top: 15vh;
+  top: 0;
   background: none;
   margin: 0 auto;
   max-width: 1200px;
@@ -107,7 +107,7 @@ header .nav .nav-link {
 .container .hero {
   text-align: center;
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
 .container .hero #intro {
@@ -245,7 +245,7 @@ header .nav .nav-link {
 
 /* Recipe Heading */
 .recipe-heading {
-  margin-top: 20px; /* Adding space below the heading */
+  margin-top: 80px; /* Adding space below the heading */
 }
 
 .recipe-heading p {
@@ -338,18 +338,14 @@ header .nav .nav-link {
 
 /***********************More***************************/
 .addmore {
-  margin-top: 20px;
+  margin-top: 80px;
+  height: auto;
 }
-
 div.recipe-form {
-  margin: 10vh auto;
-}
-
-div.recipe-form .form-element {
-  border: 1px solid black;
-  border-radius: 12px;
-  width: 110%;
-  padding: 20px;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  margin: 0; /* Remove any existing margin */
 }
 
 .form-element .meal {
@@ -361,6 +357,13 @@ div.recipe-form .form-element {
   text-indent: 3px;
 }
 
+div.recipe-form .form-element {
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px; /* Optional: Set a max width for better form scaling */
+  padding: 20px;
+}
 .form-element input[type="submit"] {
   background: #fc6a03;
   color: #ddd;
@@ -372,4 +375,60 @@ div.recipe-form .form-element {
   background: #ff8c42;
   color: #f8f9fa;
   margin-top: 10px;
+}
+
+/* Footer */
+footer.footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center-align content */
+  justify-content: center; /* Center content within the footer */
+  width: 100%;
+  padding: 20px 10px; /* Add padding for spacing */
+  background: #343a40;
+  color: #f8f9fa; /* Light color for text contrast */
+  z-index: 100;
+  text-align: center;
+}
+
+footer.footer .f-nav {
+  display: flex;
+  flex-direction: column; /* Stack navigation links */
+  align-items: center; /* Center-align links */
+  gap: 10px; /* Add spacing between links */
+  margin-bottom: 15px;
+}
+
+footer.footer .f-nav .nav-link {
+  color: #fc6a03; /* Use accent color for links */
+  font-size: 0.9rem; /* Slightly larger font size for better readability */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+footer.footer .f-nav .nav-link:hover {
+  color: #ff8c42; /* Change color on hover for interaction feedback */
+}
+
+footer.footer .f-nav .logo-name {
+  font-size: 1.5rem; /* Larger font size for emphasis */
+  color: #f8f9fa;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+footer.footer p {
+  font-size: 0.8rem; /* Adjust font size for additional text */
+  margin-top: 10px;
+  color: #d3d3d3; /* Use a lighter shade for secondary text */
+  line-height: 1.4;
+}
+
+footer.footer p span {
+  color: #fc6a03; /* Highlight specific text using accent color */
+  font-weight: bold;
 }
