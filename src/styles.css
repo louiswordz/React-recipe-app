@@ -44,7 +44,7 @@ header .logo-name {
 }
 
 header .logo-name span {
-  color: blue;
+  color: #fc6a03;
 }
 
 header .togg {
@@ -347,14 +347,29 @@ div.recipe-form {
 div.recipe-form .form-element {
   border: 1px solid black;
   border-radius: 12px;
-  width: 90%;
+  width: 110%;
   text-align: center;
+  padding: 20px;
 }
 
-div.recipe-from .form-element .meal {
+.form-element .meal {
   display: block;
   width: 100%;
   border-radius: 10px;
-  margin: 40px auto 0;
+  margin: 10px auto 0;
   height: auto;
+  text-indent: 3px;
+}
+
+.form-element input[type="submit"] {
+  background: #fc6a03;
+  color: #ddd;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.form-element input[type="submit"]:hover {
+  background: #ff8c42;
+  color: #f8f9fa;
+  margin-top: 10px;
 }
