@@ -11,9 +11,7 @@ body {
   box-sizing: border-box;
 }
 
- {
-  /* Nav */
-}
+/* Nav */
 
 .App {
   font-family: "Arial", sans-serif;
@@ -88,12 +86,11 @@ header .nav .nav-link {
   display: none;
 }
 
- {
-  /* Landing page */
-}
+/* Landing page */
+
 .container {
   position: relative;
-  top: 16vh;
+  top: 20vh;
   background: none;
   margin: 0 auto;
   max-width: 1200px;
